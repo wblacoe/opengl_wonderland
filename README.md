@@ -1,0 +1,1 @@
+This is a C++ program (using OpenGL) that shows a camera ride through an animated 3D scene.
