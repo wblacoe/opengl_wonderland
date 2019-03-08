@@ -68,31 +68,15 @@ End Function
 
 # Kommentare zu obigen Veränderungen
 
-## (1) 2 neue Felder und neue Namen
-Dort wo die Tage und Monate der Zeit in der Maßnahme berechnet werden habe ich zwei Felder hinzugefügt (P10, P11), wo
-berechnet wird, wieviele Tage Betriebsurlaub während der Maßnahme vorkommen und wieviele individuelle Urlaubstage danach
-vom Gesamturlaub übrig bleiben. Zur Berechnung der Betriebsurlaubstage wird geschaut, wieviele der Tage in der Tabelle
-``[Teilnehmerliste_2019-mit-Makros.xlsm]Betriebsferien`` zwischen Start- und Enddatum der Maßnahme liegen.
+## (1) Betriebsurlaub automatisch berechnen
+Dort wo die Tage und Monate der Zeit in der Maßnahme berechnet werden habe ich zwei Felder hinzugefügt (P10, P11), wo berechnet wird, wieviele Tage Betriebsurlaub während der Maßnahme vorkommen und wieviele individuelle Urlaubstage danach vom Gesamturlaub übrig bleiben. Zur Berechnung der Betriebsurlaubstage wird geschaut, wieviele der Tage in der Tabelle ``[Teilnehmerliste_2019-mit-Makros.xlsm]Betriebsferien`` zwischen Start- und Enddatum der Maßnahme liegen.
 
 ## (2) und (3) angepasste Eingabe der Teilnehmerdaten
-Ich habe die Abfrage für die Eingabe der Teilnehmerdaten angepasst. Jetzt wird nicht mehr nach der Gesamtzahl der
-Urlaubstage gefragt, da diese automatisch berechnet werden können. Stattdessen wird jetzt abgefragt, wieviele Monate
-der Teilnehmer in First Step verbracht hat (0 wenn First Step gar nicht durchgeführt wurde).
+Ich habe die Abfrage für die Eingabe der Teilnehmerdaten angepasst. Jetzt wird nicht mehr nach der Gesamtzahl der Urlaubstage gefragt, da diese automatisch berechnet werden können. Stattdessen wird jetzt abgefragt, wieviele Monate der Teilnehmer in First Step verbracht hat (0 wenn First Step gar nicht durchgeführt wurde).
 
 ## (4) neue Tabelle zu Urlaubstagen
-In der Kopiervorlage für die Monats-Sheets kommt die Tabelle zur Aufteilung der Urlaubstage neu hinzu. Diese übernimmt für den ersten
-Monat der Maßnahme die Betriebs- und individuellen Urlaubstage vom Teilnehmer-Sheet (siehe (1)). Für alle darauf folgenden Monate wird
-immer Bezug auf den Vormonat genommen.
+In der Kopiervorlage für die Monats-Sheets kommt die Tabelle zur Aufteilung der Urlaubstage neu hinzu. Diese übernimmt für den ersten Monat der Maßnahme die Betriebs- und individuellen Urlaubstage vom Teilnehmer-Sheet (siehe (1)). Für alle darauf folgenden Monate wird immer Bezug auf den Vormonat genommen.
 
 ## Tests
-- Wenn man einen neuen Teilnehmer anlegt und die Monatstabellen erstellt (über die zwei Knöpfe), dann kriegt man das erwünschte Ergebnis,
-und man wird aufgefordert, die Mappe wie gehabt abzuspeichern.
-- Wenn man das Enddatum der Maßnahme bei einer bereits erstellten Mappe erhöht, werden für evtl. neu hinzu gekommene Monate automatisch
-Einträge in die Tabelle geschrieben und neue Monats-Sheets erstellt. Die Daten für die Anzahl der übrigen Urlaubstage werden auf allen
-Monats-Sheets automatisch angepasst.
-
-
-
-
-
-
+- Wenn man einen neuen Teilnehmer anlegt und die Monatstabellen erstellt (über die zwei Knöpfe), dann kriegt man das erwünschte Ergebnis, und man wird aufgefordert, die Mappe wie gehabt abzuspeichern.
+- Wenn man das Enddatum der Maßnahme bei einer bereits erstellten Mappe erhöht, werden für evtl. neu hinzu gekommene Monate automatisch Einträge in die Tabelle geschrieben und neue Monats-Sheets erstellt. Die Daten für die Anzahl der übrigen Urlaubstage werden auf allen Monats-Sheets automatisch angepasst.
